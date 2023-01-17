@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Tabla </title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <!-- Menu / Header -->
+    <header>
+        <div>
+            <h3>(Nombre de la Web)</h3>
+            <h4>To2003</h4>
+        </div>
+
+        <ul>
+            <li>instagram</li>
+            <li>facebook</li>
+            <li>twitter</li>
+        </ul>
+    </header>
+
+    <main class="contenedor">
+        <div class="grupos">
+
+            <h2 class="titulo">Grupo C</h2>
+
+            <div class="partidos">
+
+                <form class="partido uno">
+    
+                    <div class="equipo local"> 
+                        <label class="nom-equipo">Argentina</label>
+                        <input type="number" id="localUno" class="goles" min="0">
+                        </input>
+                    </div>
+                    
+                    <div class="equipo visitante">
+                        <input type="number"name="goles" id="visitaUno" class="goles" min="0">
+                        </input>
+                        <label class="nom-equipo">Arabia Saudita</label>
+                    </div>
+                    
+                </form>
+
+                <p class="info">Est. Icónico, Lusail - Martes 22 de Noviembre (22/11/2022) - 08:00hs UTC</p>
+    
+                <form class="partido dos">
+    
+                    <div class="equipo local"> 
+                        <label class="nom-equipo">Mexico</label>
+                        <input type="number" name="goles" id="localDos" class="goles" min="0">
+                        </input>
+                    </div>
+                    
+                    <div class="equipo visitante">
+                        <input type="number" name="goles" id="visitaDos" class="goles" min="0">
+                        </input>
+                        <label class="nom-equipo">Polonia</label>
+                    </div>
+    
+                </form>
+
+                <p class="info">Est. 974, Doha - Martes 22 de Noviembre (22/11/2022) - 14:00hs UTC</p>
+
+                <form class="partido tres">
+    
+                    <div class="equipo local"> 
+                        <label class="nom-equipo">Polonia</label>
+                        <input type="number" name="goles" id="localTres" class="goles" min="0">
+                        </input>
+                    </div>
+                    
+                    <div class="equipo visitante">
+                        <input type="number" name="goles" id="visitaTres" class="goles" min="0">
+                        </input>
+                        <label class="nom-equipo">Arabia Saudita</label>
+                    </div>
+    
+                </form>
+
+                <p class="info">Est. de la Educación, Rayán - Sabado 26 de Noviembre (26/11/2022) - 11:00hs UTC</p>
+
+                <form class="partido cuatro">
+    
+                    <div class="equipo local"> 
+                        <label class="nom-equipo">Argentina</label>
+                        <input type="number" name="goles" id="localCuatro" class="goles" min="0">
+                        </input>
+                    </div>
+                    
+                    <div class="equipo visitante">
+                        <input type="number" name="goles" id="visitaCuatro" class="goles" min="0">
+                        </input>
+                        <label class="nom-equipo">Mexico</label>
+                    </div>
+    
+                </form>
+
+                <p class="info">Est. Icónico, Lusail - Sabado 26 de Noviembre (26/11/2022) - 17:00hs UTC</p>
+
+                <form class="partido cinco">
+    
+                    <div class="equipo local"> 
+                        <label class="nom-equipo">Polonia</label>
+                        <input type="number" name="goles" id="localCinco" class="goles" min="0">
+                        </input>
+                    </div>
+                    
+                    <div class="equipo visitante">
+                        <input type="number" name="goles" id="visitaCinco" class="goles" min="0">
+                        </input>
+                        <label class="nom-equipo">Argentina</label>
+                    </div>
+    
+                </form>
+
+                <p class="info">Est. 974, Doha - Miércoles 30 de Noviembre (30/11/2022) - 17:00hs UTC</p>
+
+                <form class="partido seis">
+    
+                    <div class="equipo local"> 
+                        <label class="nom-equipo">Arabia Saudita</label>
+                        <input type="number" name="goles" id="localSeis" class="goles" min="0">
+                        </input>
+                    </div>
+                    
+                    <div class="equipo visitante">
+                        <input type="number" name="goles" id="visitaSeis" class="goles" min="0" >
+                        </input>
+                        <label class="nom-equipo">Mexico</label>
+                    </div>
+    
+                </form>
+
+                <p class="info">Est. Icónico, Lusail - Miércoles 30 de Noviembre (30/11/2022) - 17:00hs UTC</p>
+            
+            </div>
+
+            <button class="calcular" id="calcular">Calcular</button>
+
+            <div class="tabla"></div>
+
+        </div>
+
+        <!--Tabla de Posiciones-->
+    <div class="tablaDePosiciones">
+    <h1>Tabla de Posiciones</h1>
+    <table cellspacing="0" cellpadding="0">
+        <tr class="destacado">
+            <td>Escudo</td>
+            <td>Nombre</td>
+            <td>PG</td>
+            <td>PP</td>
+            <td>PE</td>
+            <td>GF</td>
+            <td>GC</td>
+            <td>PTS</td>
+        </tr>
+        <tr id="positionArg">
+            <td>
+                <img src= "https://images.vexels.com/media/users/3/152292/isolated/preview/c73bd926f8a552125a2b8999143f5086-logotipo-de-la-selecci-n-argentina-de-ftbol.png" alt="" width="50px" class="banderas" />
+            </td>
+            <td>
+                Argentina
+            </td>
+            <td id="pgArg"></td>
+            <td id="ppArg"></td>
+            <td id="peArg"></td>
+            <td id="gfArg"></td>
+            <td id="gcArg"></td>
+            <td id="ptsArg"></td>
+        </tr>
+        <tr id="positionPol">
+            <td>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Poland.svg/1024px-Flag_of_Poland.svg.png" alt="" width="50px" class="banderas"/>
+            </td>
+            <td>Polonia</td>
+            <td id="pgPol"></td>
+            <td id="ppPol"></td>
+            <td id="pePol"></td>
+            <td id="gfPol"></td>
+            <td id="gcPol"></td>
+            <td id="ptsPol"></td>
+        </tr>
+        <tr id="positionMex">
+            <td>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/1024px-Flag_of_Mexico.svg.png" alt="" width="50px" class="banderas"/>
+            </td>
+            <td>Mexico</td>
+            <td id="pgMex"></td>
+            <td id="ppMex"></td>
+            <td id="peMex"></td>
+            <td id="gfMex"></td>
+            <td id="gcMex"></td>
+            <td id="ptsMex"></td>
+        </tr>
+        <tr id="positionAra">
+            <td>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/200px-Flag_of_Saudi_Arabia.svg.png" alt="" width="50px" class="banderas"/>
+            </td>
+            <td>Arabia Saudita</td>
+            <td id="pgAra"></td>
+            <td id="ppAra"></td>
+            <td id="peAra"></td>
+            <td id="gfAra"></td>
+            <td id="gcAra"></td>
+            <td id="ptsAra"></td>
+        </tr> 
+
+    </table>
+    </div>
+
+    </main>
+</body>
+</html>
