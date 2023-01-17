@@ -1,12 +1,12 @@
 let calcular = document.querySelector("#calcular");
-// Cantidad de Goles Locales
+// // Cantidad de Goles Locales
 
-let golLocalUno = parseInt(document.querySelector("#localUno"));
-let golLocalDos = parseInt(document.querySelector("#localDos"));
-let golLocalTres = parseInt(document.querySelector("#localTres"));
-let golLocalCuatro = parseInt(document.querySelector("#localCuatro"));
-let golLocalCinco = parseInt(document.querySelector("#localCinco"));
-let golLocalSeis = parseInt(document.querySelector("#localSeis"));
+// let golLocalUno = parseInt(document.querySelector("#localUno"));
+// let golLocalDos = parseInt(document.querySelector("#localDos"));
+// let golLocalTres = parseInt(document.querySelector("#localTres"));
+// let golLocalCuatro = parseInt(document.querySelector("#localCuatro"));
+// let golLocalCinco = parseInt(document.querySelector("#localCinco"));
+// let golLocalSeis = parseInt(document.querySelector("#localSeis"));
 
 // Cantidad de Goles Visitantes
 
@@ -98,6 +98,10 @@ const partidosEmpatadosAra = (partidosEmpatados) => {
     return peArabia + partidosEmpatados;
 }
 
+/*const golFavorArgentina = (golesFavor) => {
+    return golFavorArg + golesFavor;
+}*/
+
 // Goles a Favor 
 
 let golFavorArg = 0;
@@ -145,15 +149,14 @@ let ptsMex = document.getElementById("ptsMex");
 let ptsPol = document.getElementById("ptsPol");
 // Evento
 
-calcular.addEventListener("click", (e) =>{
+calcular.addEventListener("click", () =>{
 
-    golLocalUno = document.querySelector("#localUno").value;
+    golLocalUno = document.getElementById("localUno").value;
     golLocalDos = document.querySelector("#localDos").value;
     golLocalTres = document.querySelector("#localTres").value;
     golLocalCuatro = document.querySelector("#localCuatro").value;
     golLocalCinco = document.querySelector("#localCinco").value;
     golLocalSeis = document.querySelector("#localSeis").value;
-
 
     golVisitaUno = document.querySelector("#visitaUno").value;
     golVisitaDos = document.querySelector("#visitaDos").value;
@@ -254,7 +257,7 @@ calcular.addEventListener("click", (e) =>{
     else {
         ptsPolonia =+ puntosPol(1);
         ptsArgentina =+ puntosArg(1);
-        peArabia =+ partidosEmpatadosPol(1);
+        pePolonia =+ partidosEmpatadosPol(1);
         peArgentina =+ partidosEmpatadosArg(1);
     }
 
@@ -278,16 +281,15 @@ calcular.addEventListener("click", (e) =>{
     }
 
     // Goles a favor y en contra
+    golFavorArg = parseFloat(golLocalUno) + parseFloat(golLocalCuatro) + parseFloat(golVisitaCinco);
+    golFavorMex = parseFloat(golLocalDos) + parseFloat(golVisitaCuatro) + parseFloat(golVisitaSeis);
+    golFavorPol = parseFloat(golVisitaDos) + parseFloat(golLocalTres) + parseFloat(golLocalCinco);
+    golFavorAra = parseFloat(golVisitaUno) + parseFloat(golVisitaTres) + parseFloat(golLocalSeis);
 
-    golFavorArg =+ golLocalUno + golLocalCuatro + golVisitaCinco; 
-    golFavorMex =+ golLocalDos + golVisitaCuatro + golVisitaSeis;
-    golFavorPol =+ golVisitaDos + golLocalTres + golLocalCinco;
-    golFavorAra =+ golVisitaUno + golVisitaTres + golLocalSeis;
-
-    golContraArg =+ golVisitaUno + golVisitaCuatro + golLocalCinco;
-    golContraMex =+ golVisitaDos + golLocalCuatro + golLocalSeis;
-    golContraPol =+ golLocalDos + golVisitaTres + golVisitaCinco;
-    golContraAra =+ golLocalUno + golLocalTres + golVisitaSeis;
+    golContraArg =+ parseFloat(golVisitaUno) + parseFloat(golVisitaCuatro) + parseFloat(golLocalCinco);
+    golContraMex =+ parseFloat(golVisitaDos) + parseFloat(golLocalCuatro) + parseFloat(golLocalSeis);
+    golContraPol =+ parseFloat(golLocalDos) + parseFloat(golVisitaTres) + parseFloat(golVisitaCinco);
+    golContraAra =+ parseFloat(golLocalUno) + parseFloat(golLocalTres) + parseFloat(golVisitaSeis);
 
     console.log ("Arabia: " + ptsArabia);
     console.log ("Argentina: " + ptsArgentina);
@@ -328,6 +330,9 @@ calcular.addEventListener("click", (e) =>{
     ptsAra.innerHTML = ptsArabia;
     ptsMex.innerHTML = ptsMexico;
     ptsPol.innerHTML = ptsPolonia;
+
+//    let tabla = [];
+
     
 });
 

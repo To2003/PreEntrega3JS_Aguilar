@@ -35,12 +35,12 @@
     
                     <div class="equipo local"> 
                         <label class="nom-equipo">Argentina</label>
-                        <input type="number" id="localUno" class="goles" min="0">
+                        <input type="number" id="localUno" class="goles" min="0" value="0">
                         </input>
                     </div>
                     
                     <div class="equipo visitante">
-                        <input type="number"name="goles" id="visitaUno" class="goles" min="0">
+                        <input type="number"name="goles" id="visitaUno" class="goles" min="0" value="0">
                         </input>
                         <label class="nom-equipo">Arabia Saudita</label>
                     </div>
@@ -53,12 +53,12 @@
     
                     <div class="equipo local"> 
                         <label class="nom-equipo">Mexico</label>
-                        <input type="number" name="goles" id="localDos" class="goles" min="0">
+                        <input type="number" name="goles" id="localDos" class="goles" min="0" value="0">
                         </input>
                     </div>
                     
                     <div class="equipo visitante">
-                        <input type="number" name="goles" id="visitaDos" class="goles" min="0">
+                        <input type="number" name="goles" id="visitaDos" class="goles" min="0" value="0">
                         </input>
                         <label class="nom-equipo">Polonia</label>
                     </div>
@@ -71,12 +71,12 @@
     
                     <div class="equipo local"> 
                         <label class="nom-equipo">Polonia</label>
-                        <input type="number" name="goles" id="localTres" class="goles" min="0">
+                        <input type="number" name="goles" id="localTres" class="goles" min="0" value="0">
                         </input>
                     </div>
                     
                     <div class="equipo visitante">
-                        <input type="number" name="goles" id="visitaTres" class="goles" min="0">
+                        <input type="number" name="goles" id="visitaTres" class="goles" min="0" value="0">
                         </input>
                         <label class="nom-equipo">Arabia Saudita</label>
                     </div>
@@ -89,12 +89,12 @@
     
                     <div class="equipo local"> 
                         <label class="nom-equipo">Argentina</label>
-                        <input type="number" name="goles" id="localCuatro" class="goles" min="0">
+                        <input type="number" name="goles" id="localCuatro" class="goles" min="0" value="0">
                         </input>
                     </div>
                     
                     <div class="equipo visitante">
-                        <input type="number" name="goles" id="visitaCuatro" class="goles" min="0">
+                        <input type="number" name="goles" id="visitaCuatro" class="goles" min="0" value="0">
                         </input>
                         <label class="nom-equipo">Mexico</label>
                     </div>
@@ -107,12 +107,12 @@
     
                     <div class="equipo local"> 
                         <label class="nom-equipo">Polonia</label>
-                        <input type="number" name="goles" id="localCinco" class="goles" min="0">
+                        <input type="number" name="goles" id="localCinco" class="goles" min="0" value="0">
                         </input>
                     </div>
                     
                     <div class="equipo visitante">
-                        <input type="number" name="goles" id="visitaCinco" class="goles" min="0">
+                        <input type="number" name="goles" id="visitaCinco" class="goles" min="0" value="0">
                         </input>
                         <label class="nom-equipo">Argentina</label>
                     </div>
@@ -125,12 +125,13 @@
     
                     <div class="equipo local"> 
                         <label class="nom-equipo">Arabia Saudita</label>
-                        <input type="number" name="goles" id="localSeis" class="goles" min="0">
+                        <input type="number" name="goles" id="localSeis" class="goles" min="0" value="0"
+                        >
                         </input>
                     </div>
                     
                     <div class="equipo visitante">
-                        <input type="number" name="goles" id="visitaSeis" class="goles" min="0" >
+                        <input type="number" name="goles" id="visitaSeis" class="goles" min="0" value="0" >
                         </input>
                         <label class="nom-equipo">Mexico</label>
                     </div>
@@ -161,57 +162,58 @@
             <td>GC</td>
             <td>PTS</td>
         </tr>
-        <tr id="positionArg">
-            <td>
-                <img src= "https://images.vexels.com/media/users/3/152292/isolated/preview/c73bd926f8a552125a2b8999143f5086-logotipo-de-la-selecci-n-argentina-de-ftbol.png" alt="" width="50px" class="banderas" />
-            </td>
-            <td>
-                Argentina
-            </td>
-            <td id="pgArg"></td>
-            <td id="ppArg"></td>
-            <td id="peArg"></td>
-            <td id="gfArg"></td>
-            <td id="gcArg"></td>
-            <td id="ptsArg"></td>
-        </tr>
-        <tr id="positionPol">
-            <td>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Poland.svg/1024px-Flag_of_Poland.svg.png" alt="" width="50px" class="banderas"/>
-            </td>
-            <td>Polonia</td>
-            <td id="pgPol"></td>
-            <td id="ppPol"></td>
-            <td id="pePol"></td>
-            <td id="gfPol"></td>
-            <td id="gcPol"></td>
-            <td id="ptsPol"></td>
-        </tr>
-        <tr id="positionMex">
-            <td>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/1024px-Flag_of_Mexico.svg.png" alt="" width="50px" class="banderas"/>
-            </td>
-            <td>Mexico</td>
-            <td id="pgMex"></td>
-            <td id="ppMex"></td>
-            <td id="peMex"></td>
-            <td id="gfMex"></td>
-            <td id="gcMex"></td>
-            <td id="ptsMex"></td>
-        </tr>
-        <tr id="positionAra">
-            <td>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/200px-Flag_of_Saudi_Arabia.svg.png" alt="" width="50px" class="banderas"/>
-            </td>
-            <td>Arabia Saudita</td>
-            <td id="pgAra"></td>
-            <td id="ppAra"></td>
-            <td id="peAra"></td>
-            <td id="gfAra"></td>
-            <td id="gcAra"></td>
-            <td id="ptsAra"></td>
-        </tr> 
-
+        <tbody>
+            <tr id="positionArg">
+                <td>
+                    <img src= "https://images.vexels.com/media/users/3/152292/isolated/preview/c73bd926f8a552125a2b8999143f5086-logotipo-de-la-selecci-n-argentina-de-ftbol.png" alt="" width="50px" class="banderas" />
+                </td>
+                <td data-title="equipo">
+                    Argentina
+                </td>
+                <td id="pgArg"></td>
+                <td id="ppArg"></td>
+                <td id="peArg"></td>
+                <td id="gfArg"></td>
+                <td id="gcArg"></td>
+                <td id="ptsArg" data-title="PTS"></td>
+            </tr>
+            <tr id="positionPol">
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Poland.svg/1024px-Flag_of_Poland.svg.png" alt="" width="50px" class="banderas"/>
+                </td>
+                <td data-title="equipo">Polonia</td>
+                <td id="pgPol"></td>
+                <td id="ppPol"></td>
+                <td id="pePol"></td>
+                <td id="gfPol"></td>
+                <td id="gcPol"></td>
+                <td id="ptsPol" data-title="PTS"></td>
+            </tr>
+            <tr id="positionMex">
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/1024px-Flag_of_Mexico.svg.png" alt="" width="50px" class="banderas"/>
+                </td>
+                <td data-title="equipo">Mexico</td>
+                <td id="pgMex"></td>
+                <td id="ppMex"></td>
+                <td id="peMex"></td>
+                <td id="gfMex"></td>
+                <td id="gcMex"></td>
+                <td id="ptsMex" data-title="PTS"></td>
+            </tr>
+            <tr id="positionAra">
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/200px-Flag_of_Saudi_Arabia.svg.png" alt="" width="50px" class="banderas"/>
+                </td>
+                <td data-title="equipo">Arabia Saudita</td>
+                <td id="pgAra"></td>
+                <td id="ppAra"></td>
+                <td id="peAra"></td>
+                <td id="gfAra"></td>
+                <td id="gcAra"></td>
+                <td id="ptsAra" data-title="PTS"></td>
+            </tr> 
+        </tbody>
     </table>
     </div>
 
