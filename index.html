@@ -4,218 +4,225 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Tabla </title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./img/Banderas">
+    <link rel="stylesheet" href="./pages/">
+    <title>Inicio</title>
 </head>
-
-<body>
-    <!-- Menu / Header -->
+<body class="index">
     <header>
-        <div>
-            <h3>(Nombre de la Web)</h3>
-            <h4>To2003</h4>
+        <div class="divWorldCup">
+            <img src="./img/Logo Mundial/LogotipoDeLaCopa.png" alt="copa del mundo" class="worldCup" width="100px" height="120px">
         </div>
-
-        <ul>
-            <li>instagram</li>
-            <li>facebook</li>
-            <li>twitter</li>
-        </ul>
     </header>
 
-    <main class="contenedor">
-        <div class="grupos">
-
-            <h2 class="titulo">Grupo C</h2>
-
-            <div class="partidos">
-
-                <form class="partido uno">
-    
-                    <div class="equipo local"> 
-                        <label class="nom-equipo">Argentina</label>
-                        <input type="number" id="localUno" class="goles" min="0" value="0">
-                        </input>
-                    </div>
-                    
-                    <div class="equipo visitante">
-                        <input type="number"name="goles" id="visitaUno" class="goles" min="0" value="0">
-                        </input>
-                        <label class="nom-equipo">Arabia Saudita</label>
-                    </div>
-                    
-                </form>
-
-                <p class="info">Est. Icónico, Lusail - Martes 22 de Noviembre (22/11/2022) - 08:00hs UTC</p>
-    
-                <form class="partido dos">
-    
-                    <div class="equipo local"> 
-                        <label class="nom-equipo">Mexico</label>
-                        <input type="number" name="goles" id="localDos" class="goles" min="0" value="0">
-                        </input>
-                    </div>
-                    
-                    <div class="equipo visitante">
-                        <input type="number" name="goles" id="visitaDos" class="goles" min="0" value="0">
-                        </input>
-                        <label class="nom-equipo">Polonia</label>
-                    </div>
-    
-                </form>
-
-                <p class="info">Est. 974, Doha - Martes 22 de Noviembre (22/11/2022) - 14:00hs UTC</p>
-
-                <form class="partido tres">
-    
-                    <div class="equipo local"> 
-                        <label class="nom-equipo">Polonia</label>
-                        <input type="number" name="goles" id="localTres" class="goles" min="0" value="0">
-                        </input>
-                    </div>
-                    
-                    <div class="equipo visitante">
-                        <input type="number" name="goles" id="visitaTres" class="goles" min="0" value="0">
-                        </input>
-                        <label class="nom-equipo">Arabia Saudita</label>
-                    </div>
-    
-                </form>
-
-                <p class="info">Est. de la Educación, Rayán - Sabado 26 de Noviembre (26/11/2022) - 11:00hs UTC</p>
-
-                <form class="partido cuatro">
-    
-                    <div class="equipo local"> 
-                        <label class="nom-equipo">Argentina</label>
-                        <input type="number" name="goles" id="localCuatro" class="goles" min="0" value="0">
-                        </input>
-                    </div>
-                    
-                    <div class="equipo visitante">
-                        <input type="number" name="goles" id="visitaCuatro" class="goles" min="0" value="0">
-                        </input>
-                        <label class="nom-equipo">Mexico</label>
-                    </div>
-    
-                </form>
-
-                <p class="info">Est. Icónico, Lusail - Sabado 26 de Noviembre (26/11/2022) - 17:00hs UTC</p>
-
-                <form class="partido cinco">
-    
-                    <div class="equipo local"> 
-                        <label class="nom-equipo">Polonia</label>
-                        <input type="number" name="goles" id="localCinco" class="goles" min="0" value="0">
-                        </input>
-                    </div>
-                    
-                    <div class="equipo visitante">
-                        <input type="number" name="goles" id="visitaCinco" class="goles" min="0" value="0">
-                        </input>
-                        <label class="nom-equipo">Argentina</label>
-                    </div>
-    
-                </form>
-
-                <p class="info">Est. 974, Doha - Miércoles 30 de Noviembre (30/11/2022) - 17:00hs UTC</p>
-
-                <form class="partido seis">
-    
-                    <div class="equipo local"> 
-                        <label class="nom-equipo">Arabia Saudita</label>
-                        <input type="number" name="goles" id="localSeis" class="goles" min="0" value="0"
-                        >
-                        </input>
-                    </div>
-                    
-                    <div class="equipo visitante">
-                        <input type="number" name="goles" id="visitaSeis" class="goles" min="0" value="0" >
-                        </input>
-                        <label class="nom-equipo">Mexico</label>
-                    </div>
-    
-                </form>
-
-                <p class="info">Est. Icónico, Lusail - Miércoles 30 de Noviembre (30/11/2022) - 17:00hs UTC</p>
+    <main>
+        <div class="divGrupos">
+            <ul class="ulGrupos">
             
-            </div>
+                <li class="grupos A">
+                    <a href="./pages/grupoA.html">
+                        <h2 class="tituloGrupos">GRUPO A</h2>
+                    </a>
+                    <ul>
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Qatar.png" alt="Bandera del Pais">
+                            <li class="paises">QATAR</li>
+                        </section>
 
-            <button class="calcular" id="calcular">Calcular</button>
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Ecuador.png" alt="Bandera del Pais">
+                            <li class="paises">ECUADOR</li>
+                        </section>
+                        
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Senegal.png" alt="Bandera del Pais">
+                            <li class="paises">SENEGAL</li>
+                        </section>
 
-            <div class="tabla"></div>
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Holanda.png" alt="Bandera del Pais">
+                            <li class="paises">HOLANDA</li>
+                        </section>
+                    </ul>
+                </li>
+                <li class="grupos B"><a href="./pages/grupoB.html"><h2 class="tituloGrupos">GRUPO B</h2></a>
+                    <ul>
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Inglaterra.png" alt="Bandera del Pais">
+                            <li class="paises">INGLATERRA</li>
+                        </section>
+                        
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Iran.png" alt="Bandera del Pais">
+                            <li class="paises">IRAN</li>
+                        </section>
+                        
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/EstadosUnidos.png" alt="Bandera del Pais">
+                            <li class="paises">ESTADOS UNIDOS</li>
+                        </section>
+                        
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Gales.png" alt="Bandera del Pais">
+                            <li class="paises">GALES</li>
+                        </section>
+                        
+                    </ul>
+                </li>
+                <li class="grupos C"><a href="./pages/grupoC.html"><h2 class="tituloGrupos">GRUPO C</h2></a>
+                    <ul>
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Argentina.png" alt="Bandera del Pais">
+                            <li class="paises">ARGENTINA</li>
+                        </section>
+                        
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/ArabiaSaudita.png" alt="Bandera del Pais">
+                            <li class="paises">ARABIA SAUDITA</li>
+                        </section>
+                        
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Mexico.png" alt="Bandera del Pais">
+                            <li class="paises">MEXICO</li>
+                        </section>
+                        
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Polonia.png" alt="Bandera del Pais">
+                            <li class="paises">POLONIA</li>
+                        </section>
+                        
+                    </ul>
+                </li>
+                <li class="grupos D"><a href="./pages/grupoD.html"><h2 class="tituloGrupos">GRUPO D</h2></a>
+                    <ul>
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Francia.png" alt="Bandera del Pais">
+                            <li class="paises">FRANCIA</li>
+                        </section>
+                        
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Australia.png" alt="Bandera del Pais">
+                            <li class="paises">AUSTRALIA</li>
+                        </section>
+                        
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Dinamarca.png" alt="Bandera del Pais">
+                            <li class="paises">DINAMARCA</li>
+                        </section>
+                        
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Tunez.png" alt="Bandera del Pais">
+                            <li class="paises">TUNEZ</li>
+                        </section>
+                        
+                    </ul>
+                </li>
+            </ul>
 
         </div>
 
-        <!--Tabla de Posiciones-->
-    <div class="tablaDePosiciones">
-    <h1>Tabla de Posiciones</h1>
-    <table cellspacing="0" cellpadding="0">
-        <tr class="destacado">
-            <td>Escudo</td>
-            <td>Nombre</td>
-            <td>PG</td>
-            <td>PP</td>
-            <td>PE</td>
-            <td>GF</td>
-            <td>GC</td>
-            <td>PTS</td>
-        </tr>
-        <tbody>
-            <tr id="positionArg">
-                <td>
-                    <img src= "https://images.vexels.com/media/users/3/152292/isolated/preview/c73bd926f8a552125a2b8999143f5086-logotipo-de-la-selecci-n-argentina-de-ftbol.png" alt="" width="50px" class="banderas" />
-                </td>
-                <td data-title="equipo">
-                    Argentina
-                </td>
-                <td id="pgArg"></td>
-                <td id="ppArg"></td>
-                <td id="peArg"></td>
-                <td id="gfArg"></td>
-                <td id="gcArg"></td>
-                <td id="ptsArg" data-title="PTS"></td>
-            </tr>
-            <tr id="positionPol">
-                <td>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Poland.svg/1024px-Flag_of_Poland.svg.png" alt="" width="50px" class="banderas"/>
-                </td>
-                <td data-title="equipo">Polonia</td>
-                <td id="pgPol"></td>
-                <td id="ppPol"></td>
-                <td id="pePol"></td>
-                <td id="gfPol"></td>
-                <td id="gcPol"></td>
-                <td id="ptsPol" data-title="PTS"></td>
-            </tr>
-            <tr id="positionMex">
-                <td>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/1024px-Flag_of_Mexico.svg.png" alt="" width="50px" class="banderas"/>
-                </td>
-                <td data-title="equipo">Mexico</td>
-                <td id="pgMex"></td>
-                <td id="ppMex"></td>
-                <td id="peMex"></td>
-                <td id="gfMex"></td>
-                <td id="gcMex"></td>
-                <td id="ptsMex" data-title="PTS"></td>
-            </tr>
-            <tr id="positionAra">
-                <td>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/200px-Flag_of_Saudi_Arabia.svg.png" alt="" width="50px" class="banderas"/>
-                </td>
-                <td data-title="equipo">Arabia Saudita</td>
-                <td id="pgAra"></td>
-                <td id="ppAra"></td>
-                <td id="peAra"></td>
-                <td id="gfAra"></td>
-                <td id="gcAra"></td>
-                <td id="ptsAra" data-title="PTS"></td>
-            </tr> 
-        </tbody>
-    </table>
-    </div>
+        <div class="divGrupos">
+            <ul class="ulGrupos">
+                <li class="grupos E"><a href="./pages/grupoE.html"><h2 class="tituloGrupos">GRUPO E</h2></a>
+                    <ul>
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/España.png" alt="Bandera del Pais">
+                            <li class="paises">ESPAÑA</li>
+                        </section>
+                        
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/CostaRica.png" alt="Bandera del Pais">
+                            <li class="paises">COSTA RICA</li>
+                        </section>
+                        
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Alemania.png" alt="Bandera del Pais">
+                            <li class="paises">ALEMANIA</li>
+                        </section>
+                        
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Japon.png" alt="Bandera del Pais">
+                            <li class="paises">JAPON</li>
+                        </section>
+                        
+                    </ul>
+                </li>
+                <li class="grupos F"><a href="./pages/grupoF.html"><h2 class="tituloGrupos">GRUPO F</h2></a>
+                    <ul>
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Belgica.png" alt="Bandera del Pais">
+                            <li class="paises">BELGICA</li>
+                        </section>
+                        
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Canada.png" alt="Bandera del Pais">
+                            <li class="paises">CANADA</li>
+                        </section>
+                        
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Marruecos.png" alt="Bandera del Pais">
+                            <li class="paises">MARRUECOS</li>
+                        </section>
+                        
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Croacia.png" alt="Bandera del Pais">
+                            <li class="paises">CROACIA</li>
+                        </section>
+                        
+                    </ul>
+                </li>
+                <li class="grupos G"><a href="./pages/grupoG.html"><h2 class="tituloGrupos">GRUPO G</h2></a>
+                    <ul>
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Brasil.png" alt="Bandera del Pais">
+                            <li class="paises">BRASIL</li>
+                        </section>
+                        
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Serbia.png" alt="Bandera del Pais">
+                            <li class="paises">SERBIA</li>
+                        </section>
+                        
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Suiza.png" alt="Bandera del Pais">
+                            <li class="paises">SUIZA</li>
+                        </section>
+                        
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Camerun.png" alt="Bandera del Pais">
+                            <li class="paises">CAMERUN</li>
+                        </section>
+                        
+                    </ul>
+                </li>
+                <li class="grupos H"><a href="./pages/grupoH.html"><h2 class="tituloGrupos">GRUPO H</h2></a>
+                    <ul>
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Portugal.png" alt="Bandera del Pais">
+                            <li class="paises">PORTUGAL</li>
+                        </section>
+                        
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Ghana.png" alt="Bandera del Pais">
+                            <li class="paises">GHANA</li>
+                        </section>
+                        
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/Uruguay.png" alt="Bandera del Pais">
+                            <li class="paises">URUGUAY</li>
+                        </section>
+                        
+                        <section class="sectionPaises">
+                            <img src="./img/Banderas/CoreaDelSur.png" alt="Bandera del Pais">
+                            <li class="paises">COREA DEL SUR</li>
+                        </section>
+                        
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
     </main>
 </body>

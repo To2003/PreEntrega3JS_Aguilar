@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Tabla </title>
+    <!-- Links -->
+    <link rel="stylesheet" href="../css/grupos.css">
+    <link rel="stylesheet" href="../css/global.css">
+
+    <link rel="stylesheet" href="../index.html">
+    <link rel="stylesheet" href="../pages/">
+
+    <script defer src="../script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <!-- Menu / Header -->
+    <header>
+        <div class="divWorldCup">
+            <a href="../index.html"><img src="../img/Logo Mundial/LogotipoDeLaCopa.png" alt="copa del mundo" class="worldCup" width="100px" height="120px"></a>
+            
+        </div>
+    </header>
+
+    <main class="contenedor">
+        <div class="grupos">
+
+            <a href="../index.html"><h2 class="titulo">Grupo C</h2></a>
+
+            <div class="partidos">
+
+                <form class="partido uno">
+    
+                    <div class="equipo local"> 
+                        <label class="nom-equipo">Argentina</label>
+                        <input type="number" id="localUno" class="goles" min="0" value="0">
+                        </input>
+                    </div>
+                    
+                    <div class="equipo visitante">
+                        <input type="number"name="goles" id="visitaUno" class="goles" min="0" value="0">
+                        </input>
+                        <label class="nom-equipo">Arabia Saudita</label>
+                    </div>
+                    
+                </form>
+
+                <p class="info">Est. Icónico, Lusail - Martes 22 de Noviembre (22/11/2022) - 08:00hs UTC</p>
+    
+                <form class="partido dos">
+    
+                    <div class="equipo local"> 
+                        <label class="nom-equipo">Mexico</label>
+                        <input type="number" name="goles" id="localDos" class="goles" min="0" value="0">
+                        </input>
+                    </div>
+                    
+                    <div class="equipo visitante">
+                        <input type="number" name="goles" id="visitaDos" class="goles" min="0" value="0">
+                        </input>
+                        <label class="nom-equipo">Polonia</label>
+                    </div>
+    
+                </form>
+
+                <p class="info">Est. 974, Doha - Martes 22 de Noviembre (22/11/2022) - 14:00hs UTC</p>
+
+                <form class="partido tres">
+    
+                    <div class="equipo local"> 
+                        <label class="nom-equipo">Polonia</label>
+                        <input type="number" name="goles" id="localTres" class="goles" min="0" value="0">
+                        </input>
+                    </div>
+                    
+                    <div class="equipo visitante">
+                        <input type="number" name="goles" id="visitaTres" class="goles" min="0" value="0">
+                        </input>
+                        <label class="nom-equipo">Arabia Saudita</label>
+                    </div>
+    
+                </form>
+
+                <p class="info">Est. de la Educación, Rayán - Sabado 26 de Noviembre (26/11/2022) - 11:00hs UTC</p>
+
+                <form class="partido cuatro">
+    
+                    <div class="equipo local"> 
+                        <label class="nom-equipo">Argentina</label>
+                        <input type="number" name="goles" id="localCuatro" class="goles" min="0" value="0">
+                        </input>
+                    </div>
+                    
+                    <div class="equipo visitante">
+                        <input type="number" name="goles" id="visitaCuatro" class="goles" min="0" value="0">
+                        </input>
+                        <label class="nom-equipo">Mexico</label>
+                    </div>
+    
+                </form>
+
+                <p class="info">Est. Icónico, Lusail - Sabado 26 de Noviembre (26/11/2022) - 17:00hs UTC</p>
+
+                <form class="partido cinco">
+    
+                    <div class="equipo local"> 
+                        <label class="nom-equipo">Polonia</label>
+                        <input type="number" name="goles" id="localCinco" class="goles" min="0" value="0">
+                        </input>
+                    </div>
+                    
+                    <div class="equipo visitante">
+                        <input type="number" name="goles" id="visitaCinco" class="goles" min="0" value="0">
+                        </input>
+                        <label class="nom-equipo">Argentina</label>
+                    </div>
+    
+                </form>
+
+                <p class="info">Est. 974, Doha - Miércoles 30 de Noviembre (30/11/2022) - 17:00hs UTC</p>
+
+                <form class="partido seis">
+    
+                    <div class="equipo local"> 
+                        <label class="nom-equipo">Arabia Saudita</label>
+                        <input type="number" name="goles" id="localSeis" class="goles" min="0" value="0"
+                        >
+                        </input>
+                    </div>
+                    
+                    <div class="equipo visitante">
+                        <input type="number" name="goles" id="visitaSeis" class="goles" min="0" value="0" >
+                        </input>
+                        <label class="nom-equipo">Mexico</label>
+                    </div>
+    
+                </form>
+
+                <p class="info">Est. Icónico, Lusail - Miércoles 30 de Noviembre (30/11/2022) - 17:00hs UTC</p>
+            
+            </div>
+
+            <button class="boton" id="calcular">Calcular</button>
+            <button class="boton hide" id="reset">Reset</button>
+
+            <div class="tabla"></div>
+
+        </div>
+
+        <!--Tabla de Posiciones-->
+    <div class="tablaDePosiciones">
+    <h1>Tabla de Posiciones</h1>
+    <table cellspacing="0" cellpadding="0">
+        <tr class="destacado">
+            <td>Escudo</td>
+            <td>Nombre</td>
+            <td>PG</td>
+            <td>PP</td>
+            <td>PE</td>
+            <td>GF</td>
+            <td>GC</td>
+            <td>PTS</td>
+        </tr>
+        <tbody>
+            <tr id="positionArg">
+                <td>
+                    <img src= "../img/Banderas/Argentina.png" alt="" width="50px" class="banderas" />
+                </td>
+                <td data-title="equipo">
+                    Argentina
+                </td>
+                <td id="elementPartidosGanadosArg"></td>
+                <td id="elementPartidosPerdidosArg"></td>
+                <td id="elementPartidosEmpatadosArg"></td>
+                <td id="elementGolesFavorArg"></td>
+                <td id="elementGolesContraArg"></td>
+                <td id="elementPuntosArg" data-title="PTS"></td>
+            </tr>
+            <tr id="positionAra">
+                <td>
+                    <img src="../img/Banderas/ArabiaSaudita.png" alt="" width="50px" class="banderas"/>
+                </td>
+                <td data-title="equipo">Arabia Saudita</td>
+                <td id="elementPartidosGanadosAra"></td>
+                <td id="elementPartidosPerdidosAra"></td>
+                <td id="elementPartidosEmpatadosAra"></td>
+                <td id="elementGolesFavorAra"></td>
+                <td id="elementGolesContraAra"></td>
+                <td id="elementPuntosAra" data-title="PTS"></td>
+            </tr>
+            <tr id="positionMex">
+                <td>
+                    <img src="../img/Banderas/Mexico.png" alt="" width="50px" class="banderas"/>
+                </td>
+                <td data-title="equipo">Mexico</td>
+                <td id="elementPartidosGanadosMex"></td>
+                <td id="elementPartidosPerdidosMex"></td>
+                <td id="elementPartidosEmpatadosMex"></td>
+                <td id="elementGolesFavorMex"></td>
+                <td id="elementGolesContraMex"></td>
+                <td id="elementPuntosMex" data-title="PTS"></td>
+            </tr>
+            <tr id="positionPol">
+                <td>
+                    <img src="../img/Banderas/Polonia.png" alt="" width="50px" class="banderas"/>
+                </td>
+                <td data-title="equipo">Polonia</td>
+                <td id="elementPartidosGanadosPol"></td>
+                <td id="elementPartidosPerdidosPol"></td>
+                <td id="elementPartidosEmpatadosPol"></td>
+                <td id="elementGolesFavorPol"></td>
+                <td id="elementGolesContraPol"></td>
+                <td id="elementPuntosPol" data-title="PTS"></td>
+            </tr>
+            
+             
+        </tbody>
+    </table>
+
+
+    </div>
+
+    </main>
+</body>
+</html>

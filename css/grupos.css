@@ -1,5 +1,27 @@
-/*@media only screen and (max-width: 768px) {*/
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.divWorldCup {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* General */
 .contenedor {
     width: 100%;
     max-width: 768px;
@@ -13,7 +35,6 @@
     font-weight: 800;
     font-size: 40px;
     color: darkred;
-    text-shadow: 4px 4px grey;
 }
 
 .partido {
@@ -65,13 +86,10 @@ label {
     margin-left: 8px;
 }
 
-
-
 .nom-equipo {
     margin: 0 16px;
 
 }
-
 
 .info{
     font-size: 12px;
@@ -80,24 +98,18 @@ label {
     margin: 8px 0 32px 0;
 }
 
-
-.calcular {
-    margin: 0 auto;
+.boton {
+    margin: 20px auto;
+    padding: 6px;
 }
 
-
+/* Saca los botones del input number - esteticamente mejor */
 
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
     -webkit-appearance: none; 
     margin: 0; 
-}
-
-
-input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
+}   
 
 /* Tabla de posiciones */
 
@@ -130,7 +142,7 @@ tr{
     background-color:#0D6859;
 }
 
-  /* Impares */
+    /* Impares */
 table tr:nth-child(odd){
     background-color:#A0C55E;
 }
@@ -140,7 +152,7 @@ table tr:nth-child(odd):hover{
     background-color:#00aa00;
 }
 
-  /* Pares */
+    /* Pares */
 
 table tr:nth-child(even){
     background-color:#7AB318;
@@ -158,11 +170,3 @@ table tr:nth-child(even):hover{
 .banderas {
     padding: 10px 0;
 }
-
-
-
-
-
-
-
-/*}*/

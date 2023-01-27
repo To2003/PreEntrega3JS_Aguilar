@@ -1,12 +1,9 @@
 let calcular = document.querySelector("#calcular");
-// // Cantidad de Goles Locales
+let reset = document.querySelector("#reset");
 
-// let golLocalUno = parseInt(document.querySelector("#localUno"));
-// let golLocalDos = parseInt(document.querySelector("#localDos"));
-// let golLocalTres = parseInt(document.querySelector("#localTres"));
-// let golLocalCuatro = parseInt(document.querySelector("#localCuatro"));
-// let golLocalCinco = parseInt(document.querySelector("#localCinco"));
-// let golLocalSeis = parseInt(document.querySelector("#localSeis"));
+//Fetch del .json
+
+fetch("/data.json");
 
 // Cantidad de Goles Visitantes
 
@@ -18,89 +15,85 @@ let golVisitaCinco = parseInt(document.querySelector("#visitaCinco"));
 let golVisitaSeis = parseInt(document.querySelector("#visitaSeis"));
 
 // Puntos de cada Equipo 
-let ptsArgentina = 0;
-let ptsMexico = 0;
-let ptsPolonia = 0;
-let ptsArabia = 0;
+let puntosArg = 0;
+let puntosMex = 0;
+let puntosPol = 0;
+let puntosAra = 0;
 
 // Funcion para sumar pts
 
-const puntosArg = (puntosGanados) => {
-    return ptsArgentina + puntosGanados
+const funcionPuntosArg = (puntosGanados) => {
+    return puntosArg + puntosGanados
 }
-const puntosAra = (puntosGanados) => {
-    return ptsArabia + puntosGanados
+const funcionPuntosAra = (puntosGanados) => {
+    return puntosAra + puntosGanados
 }
-const puntosMex = (puntosGanados) => {
-    return ptsMexico + puntosGanados
+const funcionPuntosMex = (puntosGanados) => {
+    return puntosMex + puntosGanados
 }
-const puntosPol = (puntosGanados) => {
-    return ptsPolonia + puntosGanados
+const funcionPuntosPol = (puntosGanados) => {
+    return puntosPol + puntosGanados
 }
 
 //Partidos Ganados
 
-let pgArgentina = 0;
-let pgMexico = 0;
-let pgPolonia = 0;
-let pgArabia = 0;
+let partidosGanadosArg = 0;
+let partidosGanadosMex = 0;
+let partidosGanadosPol = 0;
+let partidosGanadosAra = 0;
 
-const partidosGanadosArg = (partidosGanados) => {
-    return pgArgentina + partidosGanados;
+const funcionPartidosGanadosArg = (partidosGanados) => {
+    return partidosGanadosArg + partidosGanados;
 }
-const partidosGanadosMex = (partidosGanados) => {
-    return pgMexico + partidosGanados;
+const funcionPartidosGanadosMex = (partidosGanados) => {
+    return partidosGanadosMex + partidosGanados;
 }
-const partidosGanadosPol = (partidosGanados) => {
-    return pgPolonia + partidosGanados;
+const funcionPartidosGanadosPol = (partidosGanados) => {
+    return partidosGanadosPol + partidosGanados;
 }
-const partidosGanadosAra = (partidosGanados) => {
-    return pgArabia + partidosGanados;
+const funcionPartidosGanadosAra = (partidosGanados) => {
+    return partidosGanadosAra + partidosGanados;
 }
 
 // Partidos Perdidos
 
-let ppArgentina = 0;
-let ppMexico = 0;
-let ppPolonia = 0;
-let ppArabia = 0;
+let partidosPerdidosArg = 0;
+let partidosPerdidosMex = 0;
+let partidosPerdidosPol = 0;
+let partidosPerdidosAra = 0;
 
-const partidosPerdidosArg = (partidosPerdidos) => {
-    return ppArgentina + partidosPerdidos;
+const funcionPartidosPerdidosArg = (partidosPerdidos) => {
+    return partidosPerdidosArg + partidosPerdidos;
 }
-const partidosPerdidosMex = (partidosPerdidos) => {
-    return ppMexico + partidosPerdidos;
+const funcionPartidosPerdidosMex = (partidosPerdidos) => {
+    return partidosPerdidosMex + partidosPerdidos;
 }
-const partidosPerdidosPol = (partidosPerdidos) => {
-    return ppPolonia + partidosPerdidos;
+const funcionPartidosPerdidosPol = (partidosPerdidos) => {
+    return partidosPerdidosPol + partidosPerdidos;
 }
-const partidosPerdidosAra = (partidosPerdidos) => {
-    return ppArabia + partidosPerdidos;
+const funcionPartidosPerdidosAra = (partidosPerdidos) => {
+    return partidosPerdidosAra + partidosPerdidos;
 }
 
 // Partidos Empatados
 
-let peArgentina = 0;
-let peMexico = 0;
-let pePolonia = 0;
-let peArabia = 0;
+let partidosEmpatadosArg = 0;
+let partidosEmpatadosMex = 0;
+let partidosEmpatadosPol = 0;
+let partidosEmpatadosAra = 0;
 
-const partidosEmpatadosArg = (partidosEmpatados) => {
-    return peArgentina + partidosEmpatados;
+const funcionPartidosEmpatadosArg = (partidosEmpatados) => {
+    return partidosEmpatadosArg + partidosEmpatados;
 }
-const partidosEmpatadosMex = (partidosEmpatados) => {
-    return peMexico + partidosEmpatados;
+const funcionPartidosEmpatadosMex = (partidosEmpatados) => {
+    return partidosEmpatadosMex + partidosEmpatados;
 }
-const partidosEmpatadosPol = (partidosEmpatados) => {
-    return pePolonia + partidosEmpatados;
+const funcionPartidosEmpatadosPol = (partidosEmpatados) => {
+    return partidosEmpatadosPol + partidosEmpatados;
 }
-const partidosEmpatadosAra = (partidosEmpatados) => {
-    return peArabia + partidosEmpatados;
+const funcionPartidosEmpatadosAra = (partidosEmpatados) => {
+    return partidosEmpatadosAra + partidosEmpatados;
 }
-
-/*const golFavorArgentina = (golesFavor) => {
-    return golFavorArg + golesFavor;
-}*/
 
 // Goles a Favor 
 
@@ -118,40 +111,55 @@ let golContraAra = 0;
 
 //Innerhtml
 
-let pgArg = document.getElementById("pgArg");
-let pgAra = document.getElementById("pgAra");
-let pgMex = document.getElementById("pgMex");
-let pgPol = document.getElementById("pgPol");
+let elementPartidosGanadosArg = document.getElementById("elementPartidosGanadosArg");
+let elementPartidosGanadosAra = document.getElementById("elementPartidosGanadosAra");
+let elementPartidosGanadosMex = document.getElementById("elementPartidosGanadosMex");
+let elementPartidosGanadosPol = document.getElementById("elementPartidosGanadosPol");
 
-let ppArg = document.getElementById("ppArg");
-let ppAra = document.getElementById("ppAra");
-let ppMex = document.getElementById("ppMex");
-let ppPol = document.getElementById("ppPol");
+let elementPartidosPerdidosArg = document.getElementById("elementPartidosPerdidosArg");
+let elementPartidosPerdidosAra = document.getElementById("elementPartidosPerdidosAra");
+let elementPartidosPerdidosMex = document.getElementById("elementPartidosPerdidosMex");
+let elementPartidosPerdidosPol = document.getElementById("elementPartidosPerdidosPol");
 
-let peArg = document.getElementById("peArg");
-let peAra = document.getElementById("peAra");
-let peMex = document.getElementById("peMex");
-let pePol = document.getElementById("pePol");
+let elementPartidosEmpatadosArg = document.getElementById("elementPartidosEmpatadosArg");
+let elementPartidosEmpatadosAra = document.getElementById("elementPartidosEmpatadosAra");
+let elementPartidosEmpatadosMex = document.getElementById("elementPartidosEmpatadosMex");
+let elementPartidosEmpatadosPol = document.getElementById("elementPartidosEmpatadosPol");
 
-let gfArg = document.getElementById("gfArg");
-let gfAra = document.getElementById("gfAra");
-let gfMex = document.getElementById("gfMex");
-let gfPol = document.getElementById("gfPol");
+let elementGolesFavorArg = document.getElementById("elementGolesFavorArg");
+let elementGolesFavorAra = document.getElementById("elementGolesFavorAra");
+let elementGolesFavorMex = document.getElementById("elementGolesFavorMex");
+let elementGolesFavorPol = document.getElementById("elementGolesFavorPol");
 
-let gcArg = document.getElementById("gcArg");
-let gcAra = document.getElementById("gcAra");
-let gcMex = document.getElementById("gcMex");
-let gcPol = document.getElementById("gcPol");
+let elementGolesContraArg = document.getElementById("elementGolesContraArg");
+let elementGolesContraAra = document.getElementById("elementGolesContraAra");
+let elementGolesContraMex = document.getElementById("elementGolesContraMex");
+let elementGolesContraPol = document.getElementById("elementGolesContraPol");
 
-let ptsArg = document.getElementById("ptsArg");
-let ptsAra = document.getElementById("ptsAra");
-let ptsMex = document.getElementById("ptsMex");
-let ptsPol = document.getElementById("ptsPol");
-// Evento
+let elementPuntosArg = document.getElementById("elementPuntosArg");
+let elementPuntosAra = document.getElementById("elementPuntosAra");
+let elementPuntosMex = document.getElementById("elementPuntosMex");
+let elementPuntosPol = document.getElementById("elementPuntosPol");
+
+// Evento del boton "Calcular"
 
 calcular.addEventListener("click", () =>{
 
-    golLocalUno = document.getElementById("localUno").value;
+    calcular.classList.add("hide");
+
+    reset.classList.add("show");
+    reset.classList.remove("hide");
+
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Listo, que capo soy!!',
+        showConfirmButton: false,
+        timer: 1500
+    })
+
+
+    golLocalUno = document.querySelector("#localUno").value;
     golLocalDos = document.querySelector("#localDos").value;
     golLocalTres = document.querySelector("#localTres").value;
     golLocalCuatro = document.querySelector("#localCuatro").value;
@@ -164,123 +172,125 @@ calcular.addEventListener("click", () =>{
     golVisitaCuatro = document.querySelector("#visitaCuatro").value;
     golVisitaCinco = document.querySelector("#visitaCinco").value;
     golVisitaSeis = document.querySelector("#visitaSeis").value;
-    // Calculos
+
+    // Calculos de los Partidos
 
     // Partido 1
 
     if (golLocalUno > golVisitaUno) {
-        ptsArgentina =+ puntosArg(3);
-        pgArgentina =+ partidosGanadosArg(1);
-        ppArabia =+ partidosPerdidosAra(1);
+        puntosArg =+ funcionPuntosArg(3);
+        partidosGanadosArg =+ funcionPartidosGanadosArg(1);
+        partidosPerdidosAra =+ funcionPartidosPerdidosAra(1);
     }
     else if (golLocalUno<golVisitaUno) {
-        ptsArabia =+ puntosAra(3);
-        pgArabia =+ partidosGanadosAra(1);
-        ppArgentina =+ partidosPerdidosArg(1);
+        puntosAra =+ funcionPuntosAra(3);
+        partidosGanadosAra =+ funcionPartidosGanadosAra(1);
+        partidosPerdidosArg =+ funcionPartidosPerdidosArg(1);
     }
     else {
-        ptsArgentina =+ puntosArg(1);
-        ptsArabia =+ puntosAra(1);
-        peArgentina =+ partidosEmpatadosArg(1);
-        peArabia =+ partidosEmpatadosAra(1);
+        puntosArg =+ funcionPuntosArg(1);
+        puntosAra =+ funcionPuntosAra(1);
+        partidosEmpatadosArg =+ funcionPartidosEmpatadosArg(1);
+        partidosEmpatadosAra =+ funcionPartidosEmpatadosAra(1);
     }
 
     //Partido 2
 
     if (golLocalDos > golVisitaDos) {
-        ptsMexico =+ puntosMex(3);
-        pgMexico =+ partidosGanadosMex(1);
-        ppPolonia =+ partidosPerdidosPol(1);
+        puntosMex =+ funcionPuntosMex(3);
+        partidosGanadosMex =+ funcionPartidosGanadosMex(1);
+        partidosPerdidosPol =+ funcionPartidosPerdidosPol(1);
     }
     else if (golLocalDos<golVisitaDos) {
-        ptsPolonia =+ puntosPol(3);
-        pgPolonia =+ partidosGanadosPol(1);
-        ppMexico =+ partidosPerdidosMex(1);
+        puntosPol =+ funcionPuntosPol(3);
+        partidosGanadosPol =+ funcionPartidosGanadosPol(1);
+        partidosPerdidosMex =+ funcionPartidosPerdidosMex(1);
     }
     else {
-        ptsMexico =+ puntosMex(1);
-        ptsPolonia =+ puntosPol(1);
-        peMexico =+ partidosEmpatadosMex(1);
-        pePolonia =+ partidosEmpatadosPol(1);
+        puntosMex =+ funcionPuntosMex(1);
+        puntosPol =+ funcionPuntosPol(1);
+        partidosEmpatadosMex =+ funcionPartidosEmpatadosMex(1);
+        partidosEmpatadosPol =+ funcionPartidosEmpatadosPol(1);
     }
 
     //Partido 3
 
     if (golLocalTres > golVisitaTres) {
-        ptsPolonia =+ puntosPol(3);
-        pgPolonia =+ partidosGanadosPol(1);
-        ppArabia =+ partidosPerdidosAra(1);
+        puntosPol =+ funcionPuntosPol(3);
+        partidosGanadosPol =+ funcionPartidosGanadosPol(1);
+        partidosPerdidosAra =+ funcionPartidosPerdidosAra(1);
     }
     else if (golLocalTres<golVisitaTres) {
-        ptsArabia =+ puntosAra(3);
-        pgArabia =+ partidosGanadosAra(1);
-        ppPolonia =+ partidosPerdidosPol(1);
+        puntosAra =+ funcionPuntosAra(3);
+        partidosGanadosAra =+ funcionPartidosGanadosAra(1);
+        partidosPerdidosPol =+ funcionPartidosPerdidosPol(1);
     }
     else {
-        ptsPolonia =+ puntosPol(1);
-        ptsArabia =+ puntosAra(1);
-        pePolonia =+ partidosEmpatadosPol(1);
-        peArabia =+ partidosEmpatadosAra(1);
+        puntosPol =+ funcionPuntosPol(1);
+        puntosAra =+ funcionPuntosAra(1);
+        partidosEmpatadosPol =+ funcionPartidosEmpatadosPol(1);
+        partidosEmpatadosAra =+ funcionPartidosEmpatadosAra(1);
     }
 
     //Partido 4
 
     if (golLocalCuatro > golVisitaCuatro) {
-        ptsArgentina =+ puntosArg(3);
-        pgArgentina =+ partidosGanadosArg(1);
-        ppMexico =+ partidosPerdidosMex(1);
+        puntosArg =+ funcionPuntosArg(3);
+        partidosGanadosArg =+ funcionPartidosGanadosArg(1);
+        partidosPerdidosMex =+ funcionPartidosPerdidosMex(1);
     }
     else if (golLocalCuatro<golVisitaCuatro) {
-        ptsMexico =+ puntosMex(3);
-        pgMexico =+ partidosGanadosMex(1);
-        ppArgentina =+ partidosPerdidosArg(1);
+        puntosMex =+ funcionPuntosMex(3);
+        partidosGanadosMex =+ funcionPartidosGanadosMex(1);
+        partidosPerdidosArg =+ funcionPartidosPerdidosArg(1);
     }
     else {
-        ptsArgentina =+ puntosArg(1);
-        ptsMexico =+ puntosMex(1);
-        peArgentina =+ partidosEmpatadosArg(1);
-        peMexico =+ partidosEmpatadosMex(1);
+        puntosArg =+ funcionPuntosArg(1);
+        puntosMex =+ funcionPuntosMex(1);
+        partidosEmpatadosArg =+ funcionPartidosEmpatadosArg(1);
+        partidosEmpatadosMex =+ funcionPartidosEmpatadosMex(1);
     }
 
     //Partido 5
 
     if (golLocalCinco > golVisitaCinco) {
-        ptsPolonia =+ puntosPol(3);
-        pgPolonia =+ partidosGanadosPol(1);
-        ppArgentina =+ partidosPerdidosArg(1);
+        puntosPol =+ funcionPuntosPol(3);
+        partidosGanadosPol =+ funcionPartidosGanadosPol(1);
+        partidosPerdidosArg =+ funcionPartidosPerdidosArg(1);
     }
     else if (golLocalCinco<golVisitaCinco) {
-        ptsArgentina =+ puntosArg(3);
-        pgArgentina =+ partidosGanadosArg(1);
-        ppPolonia =+ partidosPerdidosPol(1);
+        puntosArg =+ funcionPuntosArg(3);
+        partidosGanadosArg =+ funcionPartidosGanadosArg(1);
+        partidosPerdidosPol =+ funcionPartidosPerdidosPol(1);
     }
     else {
-        ptsPolonia =+ puntosPol(1);
-        ptsArgentina =+ puntosArg(1);
-        pePolonia =+ partidosEmpatadosPol(1);
-        peArgentina =+ partidosEmpatadosArg(1);
+        puntosPol =+ funcionPuntosPol(1);
+        puntosArg =+ funcionPuntosArg(1);
+        partidosEmpatadosPol =+ funcionPartidosEmpatadosPol(1);
+        partidosEmpatadosArg =+ funcionPartidosEmpatadosArg(1);
     }
 
     //Partido 6
 
     if (golLocalSeis > golVisitaSeis) {
-        ptsArabia =+ puntosAra(3);
-        pgArabia =+ partidosGanadosAra(1);
-        ppMexico =+ partidosPerdidosMex(1);
+        puntosAra =+ funcionPuntosAra(3);
+        partidosGanadosAra =+ funcionPartidosGanadosAra(1);
+        partidosPerdidosMex =+ funcionPartidosPerdidosMex(1);
     }
     else if (golLocalSeis<golVisitaSeis) {
-        ptsMexico =+ puntosMex(3);
-        pgMexico =+ partidosGanadosMex(1);
-        ppArabia =+ partidosPerdidosAra(1);
+        puntosMex =+ funcionPuntosMex(3);
+        partidosGanadosMex =+ funcionPartidosGanadosMex(1);
+        partidosPerdidosAra =+ funcionPartidosPerdidosAra(1);
     }
     else {
-        ptsArabia =+ puntosAra(1);
-        ptsMexico =+ puntosMex(1);
-        peMexico =+ partidosEmpatadosAra(1);
-        peArabia =+ partidosEmpatadosAra(1);
+        puntosAra =+ funcionPuntosAra(1);
+        puntosMex =+ funcionPuntosMex(1);
+        partidosEmpatadosMex =+ funcionPartidosEmpatadosAra(1);
+        partidosEmpatadosAra =+ funcionPartidosEmpatadosAra(1);
     }
 
-    // Goles a favor y en contra
+    // ParseFloat de Goles a favor y en contra (Transforma el string en numero, facilita las sumas)
+
     golFavorArg = parseFloat(golLocalUno) + parseFloat(golLocalCuatro) + parseFloat(golVisitaCinco);
     golFavorMex = parseFloat(golLocalDos) + parseFloat(golVisitaCuatro) + parseFloat(golVisitaSeis);
     golFavorPol = parseFloat(golVisitaDos) + parseFloat(golLocalTres) + parseFloat(golLocalCinco);
@@ -291,48 +301,45 @@ calcular.addEventListener("click", () =>{
     golContraPol =+ parseFloat(golLocalDos) + parseFloat(golVisitaTres) + parseFloat(golVisitaCinco);
     golContraAra =+ parseFloat(golLocalUno) + parseFloat(golLocalTres) + parseFloat(golVisitaSeis);
 
-    console.log ("Arabia: " + ptsArabia);
-    console.log ("Argentina: " + ptsArgentina);
-    console.log ("Mexico: "+ ptsMexico);
-    console.log ("Polonia: "+ ptsPolonia);
+    // InnerHTML Tabla de Posiciones, pasa todos los datos anteriores a la tabla del html
 
-    console.log(pgArgentina);
-    console.log(golFavorArg);
+    elementPartidosGanadosArg.innerHTML = partidosGanadosArg;
+    elementPartidosGanadosAra.innerHTML = partidosGanadosAra;
+    elementPartidosGanadosMex.innerHTML = partidosGanadosMex;
+    elementPartidosGanadosPol.innerHTML = partidosGanadosPol;
 
-    // InnerHTML Tabla de Posiciones
+    elementPartidosPerdidosArg.innerHTML = partidosPerdidosArg;
+    elementPartidosPerdidosAra.innerHTML = partidosPerdidosAra;
+    elementPartidosPerdidosMex.innerHTML = partidosPerdidosMex;
+    elementPartidosPerdidosPol.innerHTML = partidosPerdidosPol;
 
-    pgArg.innerHTML = pgArgentina;
-    pgAra.innerHTML = pgArabia;
-    pgMex.innerHTML = pgMexico;
-    pgPol.innerHTML = pgPolonia;
+    elementPartidosEmpatadosArg.innerHTML = partidosEmpatadosArg;
+    elementPartidosEmpatadosAra.innerHTML = partidosEmpatadosAra;
+    elementPartidosEmpatadosMex.innerHTML = partidosEmpatadosMex;
+    elementPartidosEmpatadosPol.innerHTML = partidosEmpatadosPol;
 
-    ppArg.innerHTML = ppArgentina;
-    ppAra.innerHTML = ppArabia;
-    ppMex.innerHTML = ppMexico;
-    ppPol.innerHTML = ppPolonia;
+    elementGolesFavorArg.innerHTML = golFavorArg;
+    elementGolesFavorAra.innerHTML = golFavorAra;
+    elementGolesFavorMex.innerHTML = golFavorMex;
+    elementGolesFavorPol.innerHTML = golFavorPol;
 
-    peArg.innerHTML = peArgentina;
-    peAra.innerHTML = peArabia;
-    peMex.innerHTML = peMexico;
-    pePol.innerHTML = pePolonia;
+    elementGolesContraArg.innerHTML = golContraArg;
+    elementGolesContraAra.innerHTML = golContraAra;
+    elementGolesContraMex.innerHTML = golContraMex;
+    elementGolesContraPol.innerHTML = golContraPol;
 
-    gfArg.innerHTML = golFavorArg;
-    gfAra.innerHTML = golFavorAra;
-    gfMex.innerHTML = golFavorMex;
-    gfPol.innerHTML = golFavorPol;
-
-    gcArg.innerHTML = golContraArg;
-    gcAra.innerHTML = golContraAra;
-    gcMex.innerHTML = golContraMex;
-    gcPol.innerHTML = golContraPol;
-
-    ptsArg.innerHTML = ptsArgentina;
-    ptsAra.innerHTML = ptsArabia;
-    ptsMex.innerHTML = ptsMexico;
-    ptsPol.innerHTML = ptsPolonia;
-
-//    let tabla = [];
+    elementPuntosArg.innerHTML = puntosArg;
+    elementPuntosAra.innerHTML = puntosAra;
+    elementPuntosMex.innerHTML = puntosMex;
+    elementPuntosPol.innerHTML = puntosPol;
 
     
 });
+
+reset.addEventListener("click", () =>{
+
+    location.reload();
+
+});
+
 
