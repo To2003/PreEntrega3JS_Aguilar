@@ -1,9 +1,10 @@
 let calcular = document.querySelector("#calcular");
 let reset = document.querySelector("#reset");
+let tabla = [];
 
 //Fetch del .json
 
-fetch("/data.json");
+
 
 // Cantidad de Goles Visitantes
 
@@ -332,8 +333,6 @@ calcular.addEventListener("click", () =>{
     elementPuntosAra.innerHTML = puntosAra;
     elementPuntosMex.innerHTML = puntosMex;
     elementPuntosPol.innerHTML = puntosPol;
-
-    
 });
 
 reset.addEventListener("click", () =>{
@@ -341,5 +340,3 @@ reset.addEventListener("click", () =>{
     location.reload();
 
 });
-
-

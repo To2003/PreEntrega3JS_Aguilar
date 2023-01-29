@@ -1,0 +1,41 @@
+[
+    {"pais": "QATAR", "grupo": "A", "id": 1},
+    {"pais": "ECUADOR", "grupo": "A", "id": 2},
+    {"pais": "SENEGAL", "grupo": "A", "id": 3},
+    {"pais": "HOLANDA", "grupo": "A", "id": 4},
+
+    {"pais": "INGLATERRA", "grupo": "B", "id": 5},
+    {"pais": "IRAN", "grupo": "B", "id": 6},
+    {"pais": "ESTADOS UNIDOS", "grupo": "B", "id": 7},
+    {"pais": "GALES", "grupo": "B", "id": 8},
+
+    {"pais": "ARGENTINA", "grupo": "C", "id": 9},
+    {"pais": "ARABIA SAUDITA", "grupo": "C", "id": 10},
+    {"pais": "MEXICO", "grupo": "C", "id": 11},
+    {"pais": "POLONIA", "grupo": "C", "id": 12},
+
+    {"pais": "FRANCIA", "grupo": "D", "id": 13},
+    {"pais": "AUSTRALIA", "grupo": "D", "id": 14},
+    {"pais": "DINAMARCA", "grupo": "D", "id": 15},
+    {"pais": "TUNEZ", "grupo": "D", "id": 16},
+
+    {"pais": "ESPAÑA", "grupo": "E", "id": 17},
+    {"pais": "COSTA RICA", "grupo": "E", "id": 18},
+    {"pais": "ALEMANIA", "grupo": "E", "id": 19},
+    {"pais": "JAPON", "grupo": "E", "id": 20},
+
+    {"pais": "BELGICA", "grupo": "F", "id": 21},
+    {"pais": "CANADA", "grupo": "F", "id": 22},
+    {"pais": "MARRUECOS", "grupo": "F", "id": 23},
+    {"pais": "CROACIA", "grupo": "F", "id": 24},
+
+    {"pais": "BRASIL", "grupo": "G", "id": 25},
+    {"pais": "SERBIA", "grupo": "G", "id": 26},
+    {"pais": "SUIZA", "grupo": "G", "id": 27},
+    {"pais": "CAMERUN", "grupo": "G", "id": 28},
+
+    {"pais": "PORTUGAL", "grupo": "H", "id": 29},
+    {"pais": "GHANA", "grupo": "H", "id": 30},
+    {"pais": "URUGUAY", "grupo": "H", "id": 31},
+    {"pais": "COREA DEL SUR", "grupo": "H", "id": 32}
+]
