@@ -35,6 +35,7 @@ body {
     font-weight: 800;
     font-size: 40px;
     color: darkred;
+    margin: 16px;
 }
 
 .partido {
@@ -169,4 +170,22 @@ table tr:nth-child(even):hover{
 
 .banderas {
     padding: 10px 0;
+}
+
+/* Rotate 180 */
+.rotate180 {
+    transform: rotate(180deg);
+}
+
+.movility {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.movility svg {
+    width: 40px;
+    height: 30px;
+    color: black;
 }
