@@ -1,11 +1,12 @@
-const listadoA = document.querySelector("#listadoA");
 
-const constJson = async () => {
+const constJson = async (valor) => {
+    const listado = document.querySelector("#listado"+valor);
+
     const resp = await fetch("./teams.json");
     const data = await resp.json();
     
     var grupoA = data.filter(function(el) {
-        return (el.grupo === "A");
+        return (el.grupo === valor);
     });
 
     grupoA.forEach((post)=> {
@@ -17,8 +18,8 @@ const constJson = async () => {
             </section>
         `;
 
-        listadoA.append(li);
+        listado.append(li);
     });
 };
 
-constJson();
+constJson("B");
